@@ -7,8 +7,8 @@ const port = 3001;
 
 // Cargar certificados SSL
 const options = {
-  key: fs.readFileSync('10.7.17.122-key.pem'),
-  cert: fs.readFileSync('10.7.17.122.pem')
+  key: fs.readFileSync('localhost-key.pem'),
+  cert: fs.readFileSync('localhost.pem')
 };
 
 app.use(cors());
