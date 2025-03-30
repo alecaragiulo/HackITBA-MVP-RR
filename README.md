@@ -1,1 +1,17 @@
 ECOmmunity es una aplicación que incentiva hábitos sostenibles mediante un sistema de recompensas por reducir el uso de plásticos. Los usuarios acumulan puntos al realizar acciones ecológicas en comercios adheridos y los canjean por beneficios. La plataforma genera impacto ambiental positivo, fomenta el consumo responsable y aporta valor económico a comercios y consumidores.
+
+Pre requisitos:
+se debe disponer de una herramienta como mkcert para generar certificados https de desarrollo. Con la misma se deben generar certificados para el localhost del equipo que hostea tanto el backend como el frontend.
+
+instrucciones para testear
+- Contar con los pre-requisitos completos
+- Copiar los certificados generados previamente en la carpeta loyalty-microservice y en la carpeta certificates de loyalty-frontend (cd loyalty-frontend/certificates)
+- Abrir una terminal y ubicarse en loyalty-microservice (cd loyalty-microservice) y ejecutar npm run dev
+- Abrir una terminal y ubicarse en loyalty-microservice (cd loyalty-frontend) y ejecutar npm run dev
+
+Rutas a probar :
+
+ * https://localhost:3000/client
+ * https://localhost:3000/qr
+ 
+Disclaimer: No se encuentra deployado, por lo que alentamos al testeo de manera local con equipos desktop. En el futuro si tuviese deploy todos estos pasos serían omitidos y solo quedaría acceder a las url correspondiente
